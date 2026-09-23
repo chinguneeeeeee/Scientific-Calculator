@@ -1,7 +1,9 @@
-#Chinguun Tuguldur
-#Description: Scientific calculator
-#Sources: None
-#GitHub Link: https://github.com/chinguneeeeeee/Scientific-Calculator/
+# Chinguun Tuguldur
+# Description: Scientific calculator
+# Sources: None
+# GitHub Link: https://github.com/chinguneeeeeee/Scientific-Calculator/
+
+# TODO: add content to the 2nd 3rd and settings function
 
 def listOfFunc():
     # Print the lists of function that the user want to use
@@ -11,6 +13,7 @@ def listOfFunc():
           "3. Calculus\n"
           "4. Settings\n"
           "5. Exit the calculator\n")
+
 
 def firstFunction(equations):
     # Return the value of the user's equation
@@ -22,26 +25,30 @@ def firstFunction(equations):
 def secondFunction():
     return None
 
+
 def thirdFunction():
     return None
+
 
 def settingsFunction():
     return None
 
+
 def exitFunction():
-    print() # New line
+    print()  # New line
     print("Goodbye! Have a nice day!")
     print()
 
+
 if __name__ == "__main__":
     # Asking the user's name for the introductory part
-    #name = input("Enter your name: ")
+    # name = input("Enter your name: ")
 
     # Introduction
-    #print("Hello ", name, ", this is a scientific calculator.", sep='')
+    # print("Hello ", name, ", this is a scientific calculator.", sep='')
     conditionToUse = int(input(
         "Press 1 if you want to use the calculator: "
-    )) # Ask the user's consent to use the calculator
+    ))  # Ask the user's consent to use the calculator
 
     if conditionToUse == 1:
         # Header of the program
@@ -62,14 +69,14 @@ if __name__ == "__main__":
             elif functionToUse == 4:
                 settingsFunction()
 
-            listOfFunc() # Loop lists until exit
+            listOfFunc()  # Loop lists until exit
 
             # User input whether to choose which function to use
             functionToUse = int(input("Enter your choice: "))
 
             if 1 <= functionToUse <= 3:
                 print()
-            elif functionToUse == 5: # User's consent to exit the program
+            elif functionToUse == 5:  # User's consent to exit the program
                 exitFunction()
             else:
                 # If the value is not between 1 and 5. Repeat.
