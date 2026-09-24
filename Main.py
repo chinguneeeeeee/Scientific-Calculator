@@ -174,9 +174,10 @@ if __name__ == "__main__":
             #    thirdFunction()
             elif functionToUse == 4:  # Settings function
                 settingsFunction()
-
-            if functionToUse == 5:  # User's consent to exit the program
+            elif functionToUse == 5:  # User's consent to exit the program
                 exitFunction(name="Chinguun")  # TODO remove string
+            else:
+                print("\nWrong input. Please try again.")
 
         # Footer of the program
         print("=" * 30 + " CALCULATOR " + "=" * 30, end="\n")
